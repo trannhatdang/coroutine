@@ -36,9 +36,5 @@ public class uiscript : MonoBehaviour
 		{
 			return;
 		}
-
-		list_part[num].gameObject.GetComponent<testParticleSystem>().play_part();
-
-
 	}
 }
