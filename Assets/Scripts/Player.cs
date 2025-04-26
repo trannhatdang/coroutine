@@ -79,5 +79,6 @@ public class Player : MonoBehaviour
 	}
 	public IEnumerator Hurt()
 	{
+		yield break; //yield break khi muon thoat
 	}
 }

@@ -18,6 +18,7 @@ public class Arms : MonoBehaviour
 	}
 	public IEnumerator Attack()
 	{
+		yield break;
 		//TODO
 	}
 

@@ -40,5 +40,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator routine()
     {
+	    yield break;
     }
+
 }
