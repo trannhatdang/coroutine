@@ -395,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &487258912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1146,7 @@ GameObject:
   - component: {fileID: 961299996}
   - component: {fileID: 961299997}
   - component: {fileID: 961299998}
+  - component: {fileID: 961299999}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -1162,7 +1163,7 @@ Transform:
   m_GameObject: {fileID: 961299994}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.615, y: -0.181, z: 0}
+  m_LocalPosition: {x: 0.6310713, y: -0.181, z: -0.14507747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1253,6 +1254,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a6cf16943587397b90e3bb372c2e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &961299999
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961299994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.11647642, y: 0.16068864}
+  - {x: -0.12081742, y: 0.16436982}
+  - {x: 0.100744724, y: 0.39129698}
+  - {x: 1.0463452, y: 1.3892012}
+  - {x: 1.3359121, y: 1.365792}
+  - {x: 1.3683048, y: 1.0259285}
+  - {x: 0.16834581, y: -0.12673914}
+  - {x: -0.11960375, y: 0.1590085}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1094578106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4284,7 +4332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staggered: 0
   speed: 1
-  jumpForce: 10
+  jumpForce: 3
 --- !u!61 &1735647314
 BoxCollider2D:
   m_ObjectHideFlags: 0
