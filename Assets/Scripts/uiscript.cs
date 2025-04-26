@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class uiscript : MonoBehaviour
 {
-	[SerializeField] List<ParticleSystem> list_part;
 	public static uiscript instance;
 	void Awake()
 	{
@@ -15,26 +14,6 @@ public class uiscript : MonoBehaviour
 		else
 		{
 			instance = this;
-		}
-	}
-
-	// Start is called before the first frame update
-	void Start()
-	{
-
-
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
-	public void PlayParticleSys(int num)
-	{	
-		if(!list_part[num]) 
-		{
-			return;
 		}
 	}
 }
