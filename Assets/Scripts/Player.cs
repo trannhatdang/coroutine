@@ -79,11 +79,5 @@ public class Player : MonoBehaviour
 	}
 	public IEnumerator Hurt()
 	{
-		if(staggered) yield break;
-
-		hp--;
-		staggered = true;
-		yield return new WaitForSeconds(1f);
-		staggered = false;
 	}
 }

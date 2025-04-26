@@ -40,32 +40,5 @@ public class Enemy : MonoBehaviour
 
     IEnumerator routine()
     {
-	    yield return new WaitForSeconds(2f);
-	    var rand = new System.Random();
-
-	    while(hp > 0)
-	    {
-		    if(rand.Next() % 2 == 0)
-		    {
-			    if(flag)
-			    {
-				    rb.AddForce(Vector2.left * 500);
-				    flag = false;
-			    }
-			    else
-			    {
-				    rb.AddForce(Vector2.right * 500);
-				    flag = true;
-			    }
-		    }
-		    else
-		    {
-			    foreach(Guns gun in guns)
-			    {
-				    gun.shoot(flag);
-			    }
-		    }
-		    yield return new WaitForSeconds(2f);
-	    }
     }
 }

@@ -18,18 +18,7 @@ public class Arms : MonoBehaviour
 	}
 	public IEnumerator Attack()
 	{
-		if(flag) yield break;
-
-		anim.SetBool("Attack", true);
-		spr.enabled = true;
-		coll.enabled = true;
-		flag = true;
-		for(int i = 0; i < 37; ++i) yield return null;
-		anim.SetBool("Attack", false);
-		spr.enabled = false;
-		coll.enabled = false;
-		for(int i = 0; i < 30; ++i) yield return null;
-		flag = false;
+		//TODO
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
